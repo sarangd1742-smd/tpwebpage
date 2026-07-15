@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Prediction</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    background:white;
+    width:350px;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+h1{
+    color:#333;
+    margin-bottom:20px;
+}
+
+.search-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.search-box input{
+    flex:1;
+    padding:10px;
+    border:2px solid #4facfe;
+    border-radius:10px;
+    outline:none;
+}
+
+.search-box button{
+    padding:10px 15px;
+    border:none;
+    border-radius:10px;
+    background:#4facfe;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.search-box button:hover{
+    background:#008cff;
+}
+
+.weather-card{
+    margin-top:20px;
+}
+
+.weather-icon{
+    font-size:60px;
+}
+
+.temp{
+    font-size:42px;
+    color:#333;
+    margin:10px 0;
+}
+
+.city{
+    font-size:24px;
+    color:#555;
+}
+
+.details{
+    display:flex;
+    justify-content:space-around;
+    margin-top:20px;
+}
+
+.detail{
+    text-align:center;
+}
+
+.detail h3{
+    color:#4facfe;
+}
+
+.detail p{
+    color:#555;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌦 Weather Prediction</h1>
+
+    <div class="search-box">
+        <input type="text" placeholder="Enter City">
+        <button>Search</button>
+    </div>
+
+    <div class="weather-card">
+        <div class="weather-icon">☀️</div>
+
+        <div class="temp">28°C</div>
+
+        <div class="city">New Delhi</div>
+
+        <div class="details">
+
+            <div class="detail">
+                <h3>Humidity</h3>
+                <p>70%</p>
+            </div>
+
+            <div class="detail">
+                <h3>Wind</h3>
+                <p>15 km/h</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
